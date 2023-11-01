@@ -1,0 +1,57 @@
+1º De quais formas você sabe utilizar CSS para estilizar suas páginas?
+R: Estilo inline, Estilo externo e Estilo interno. Diferença entre eles. Basicamente o interno precisamos adiconar uma tag "<styles></styles>" na <head> do HTML deixando o codigo muito verboso, além do tempo de compilação. Já o Estilo externo, criamos um arquivo .css, por exemplo, teste.css e adicionamos a tag <link rel="stylesheet" href="teste.css"> no <head>. Dessa forma, conseguimos separar a estilização deixando mais limpo o codigo e podemos usar para mais de uma pagina HTML. Além dessas, o estilo inline é basicamente usado para um elemento HTML especifico, ou seja, precisamos passar nas tags HTML, por exemplo, <h1 style="color:black" >Teste</h1> a propriedade style e dessa forma conseguimos estilizar somento o elemento especifico.
+
+-------------------------------------------------------------------------------
+2º O que é um seletor CSS? Quais tipos de seletores você conhece?
+R: É um padrão o qual especifica quais elementos HTML será modificado pela estilização. Conheço alguns seletores tais quais: seletores do tipo classe, ID, pseudoclasse, combinadores, combinador descendente e seletores do tipo elemento HTML.
+
+-------------------------------------------------------------------------------
+3º O que faz este seletor: div > p?
+R: basicamente esse seletor irá pegar todos os elemento do tipo <p> o qual é filho direto do elemento <div> e irá modificar de acordo com a especificação da estilização.
+
+------------------------------------------------------------------------------
+4º Qual a diferença entre: div > p, div p e div + p , se é que há alguma?
+R: Exite diferenças entre eles: Basicamente, o seletor div > p irá seleciona todos os elementos <p> que são filhos diretos de elementos <div>. Já o seletor div p, irá pegar todos os elementos <p> o qual está dentro do elemento <div> independente se o elemento <p> é filho direto ou não do elemento <div>. E por ultimo, o seletor div + p irá pegar no mesmo nivel de hierarquia do elemento <div> o primeiro elementos <p>.
+
+-------------------------------------------------------------------------------
+5º Quais valores você conhece para a propriedade display? Explique cada um deles.
+R: 
+display: block =  Ocupa todo o espaço dispinivel e começam e uma nova linha
+display: flex = Cria um conteiner flexível para os layouts responsivos e flexíveis.
+display: grid = Cria um layout em grade.
+display: none = Ocupa o elemento
+display: inline = Ocupa so o espaço do elemento
+
+-------------------------------------------------------------------------------
+6º Quais valores você conhece para a proprieadade position? Explique cada um deles.
+R:
+position: relative = podemos deslocar um elemento a partir de sua posição original, mantendo o espaço que ele ocupava reservado no layout, sem causar impacto nos outros elementos.
+position: absolute = se posiciona de acordo com a posição do elemento pai mais proximo que tenha o position diferente de static. 
+position: fixed = Irá se posicionar sempre em relação a janela do navegador e parmanece fixo independente se a pagina tiver scroll ou não.
+position: sticky = esse position permite que inicie em um determinado lugar e quando a pagina sofre scroll de um ponto especifico ele se comporta como position:fixed 
+
+-------------------------------------------------------------------------------
+7º Se um usuário acessa uma página de um computador e vê um título com uma fonte, e outro usuário visualiza esta mesma página em um outro computador, e vê o mesmo título com uma fonte diferente, o que pode ter acontecido? Como você resolveria este problema?
+R: O que pode estar acontecendo é que os usuários podem estar utilizando navegadores diferentes e esse navegador pode não suportar o tipo de fonte implementada. Nesse caso, eu colocaria fontes alternativas para que em caso de falha, carregue a fonte especificada. Por exemplo: font-family: Arial, Helvetica, sans-serif;
+
+-------------------------------------------------------------------------------
+8º Qual a diferença entre font-size: 10px, font-size: 10em, font-size: 10rem e font-size: 10pt?
+R: Basicamente a diferença é a unidade de medida entre elas. o "px" representa um ponto na tela. Já o "em", define o tamanho da font de acordo com o tamanho do da fonte do elemento pai. E por fim, a unidade de medida "pt" é mais usada para impressões.
+
+-------------------------------------------------------------------------------
+9º De 1 a 5, diga quanto de cada um desses recursos você conhece:
+R:
+Flex box = 5 
+CSS grid = 4
+variáveis CSS = 4
+viewport = 5
+
+-------------------------------------------------------------------------------
+10º Quais sites você utiliza para consultar documentação de CSS? E como saber quais browsers suportam quais recursos?
+R: Geralmente utilizo o site do W3Schools ou Mozilla Developer Network (MDN). Geralmente no nos sites que citei, existem tabelas especificando quais browsers suportam os recursos.
+
+-------------------------------------------------------------------------------
+EXTRA: Observe que toda vez queessa url é chamada, ela gera uma imagem aleatória diferente, no entanto se você simplesmente adicionar 10 tags <img> em uma página com essa mesma URL as 10 imagens serão iguais. Consegue dizer por que isso acontece?.
+R: Na situação descrita, ao inserir as 10 tags <img> na página, o navegador faz apenas uma única requisição à URL especificada. Como a URL é a mesma, ele retorna a mesma imagem para todas as tags.
+Para resolver esse problema, a API disponibiliza parâmetros que podem ser passados, como por exemplo: random="numero". Aqui está um exemplo que implementei no teste: <img src="https://picsum.photos/200/200?random=1" alt="imagem 1" />, passando o parâmetro na URL.
+Isso garantirá que o navegador faça uma nova requisição e obtenha uma imagem diferente para cada tag <img>.
