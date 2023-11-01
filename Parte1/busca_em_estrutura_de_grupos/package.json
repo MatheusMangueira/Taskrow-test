@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.8.10"
+  },
+  "scripts": {
+    "start:dev": "ts-node-dev --ignore-watch node_modules --respawn --cls --rs src/main.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "node-fetch": "^3.3.2",
+    "ts-node-dev": "^2.0.0"
+  }
+}

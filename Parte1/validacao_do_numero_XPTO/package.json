@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.8.10"
+  },
+  "scripts": {
+    "start:dev": "ts-node-dev --ignore-watch node_modules --respawn --cls --rs src/result.ts"
+  },
+  "dependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
+}

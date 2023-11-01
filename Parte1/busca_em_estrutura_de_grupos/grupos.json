@@ -1,0 +1,114 @@
+{
+  "grupos": [
+    {
+      "idGrupo": 1,
+      "nome": "Raiz",
+      "usuarios": [
+        {
+          "idUsuario": 1,
+          "nome": "João dos Santos"
+        },
+        {
+          "idUsuario": 2,
+          "nome": "José da Silva"
+        }
+      ],
+      "subGrupos": [
+        {
+          "idGrupo": 2,
+          "nome": "Vendas",
+          "usuarios": [
+            {
+              "idUsuario": 3,
+              "nome": "Maria do Carmo"
+            },
+            {
+              "idUsuario": 4,
+              "nome": "Ana Paula"
+            }
+          ],
+          "subGrupos": [
+            {
+              "idGrupo": 3,
+              "nome": "Vendas SP",
+              "usuarios": [
+                {
+                  "idUsuario": 5,
+                  "nome": "Pedro da Silva"
+                },
+                {
+                  "idUsuario": 6,
+                  "nome": "Paulo do Nascimento"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idGrupo": 4,
+          "nome": "Operações",
+          "subGrupos": [
+            {
+              "idGrupo": 5,
+              "nome": "Produto",
+              "usuarios": [
+                {
+                  "idUsuario": 7,
+                  "nome": "Marcos Evangelista"
+                },
+                {
+                  "idUsuario": 8,
+                  "nome": "Ubiraja dos Reis"
+                }
+              ]
+            },
+            {
+              "idGrupo": 6,
+              "nome": "Tecnologia",
+              "usuarios": [
+                {
+                  "idUsuario": 9,
+                  "nome": "João Paulo"
+                },
+                {
+                  "idUsuario": 10,
+                  "nome": "José da Silva"
+                }
+              ],
+              "subGrupos": [
+                {
+                  "idGrupo": 7,
+                  "nome": "Desenvolvimento",
+                  "usuarios": [
+                    {
+                      "idUsuario": 11,
+                      "nome": "Maria de Jesus"
+                    },
+                    {
+                      "idUsuario": 12,
+                      "nome": "Ana Paula"
+                    }
+                  ]
+                },
+                {
+                  "idGrupo": 8,
+                  "nome": "Infraestrutura",
+                  "usuarios": [
+                    {
+                      "idUsuario": 13,
+                      "nome": "Pedro Cardoso"
+                    },
+                    {
+                      "idUsuario": 14,
+                      "nome": "Paulo Lopes"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
