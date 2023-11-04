@@ -7,7 +7,7 @@ async function main() {
    try {
       await grupos.carrega();
 
-      grupos.busca("Raiz", (grupos) => {
+      grupos.busca('nome', 'josé', (grupos) => {
          console.log('Grupos encontrados:', grupos);
       })
 
