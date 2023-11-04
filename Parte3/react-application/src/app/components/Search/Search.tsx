@@ -36,7 +36,7 @@ export const Search = () => {
             type="text"
             value={search}
             onChange={handleSearch}
-            placeholder="Digite para buscar..."
+            placeholder="Digite o nome "
           />
         </div>
 

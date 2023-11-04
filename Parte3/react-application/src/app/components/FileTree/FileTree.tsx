@@ -36,13 +36,17 @@ export const FileTree = ({ grupo, filterGroups }: GroupTreeViewProps) => {
   return (
     <div className="ml-5 w-fit h-full">
       <div className="flex items-center gap-1 cursor-pointer p-1">
-        <FolderNotchOpen size={18} onClick={handleOpenFile} />
+        <FolderNotchOpen
+          className="hover:text-gray-400"
+          size={18}
+          onClick={handleOpenFile}
+        />
         <Link
           href={`/grupos/${grupo.idGrupo}`}
           className={cn(
             isHighlighted && 'bg-gray-500 rounded-md p-1',
             open && 'text-green-800',
-            'whitespace-nowrap flex gap-2 cursor-pointer text-gray-70 hover:text-black'
+            'whitespace-nowrap flex gap-2 cursor-pointer text-gray-70 hover:text-gray-400'
           )}
         >
           {grupo.nome}
