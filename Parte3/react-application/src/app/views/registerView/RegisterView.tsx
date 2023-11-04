@@ -79,7 +79,7 @@ export const RegisterView = () => {
   return (
     <div className=" w-full flex flex-col items-center justify-center h-full ">
       <div className="pb-5">
-        <h1 className="text-4xl">Cadastrar Item</h1>
+        <h1 className="text-4xl">Cadastrar</h1>
       </div>
       <div className="bg-gray-300 p-6 rounded-lg max-w-xl w-full flex flex-col gap-4">
         <div>
