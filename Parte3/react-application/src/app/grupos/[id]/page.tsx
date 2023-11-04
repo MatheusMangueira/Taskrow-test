@@ -11,8 +11,6 @@ export default function GroupDetails({ params }: Params) {
   const groups = groupManager.searchGroup('idGrupo', Number(params.id));
   const users = groupManager.searchUser('nome', groups[0].nome);
 
-  console.log(users);
-
   if (!users[0]) {
     notFound();
   }

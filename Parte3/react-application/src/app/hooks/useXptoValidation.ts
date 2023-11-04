@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { calculateDV, validateNumberXpto } from "../utils/numberXpto";
-
+import { useState } from 'react';
+import { calculateDV, validateNumberXpto } from '../utils/numberXpto';
 
 export const useXptoValidation = (numberXPTO: string) => {
   const [errorsNumberXPTO, setErrorsNumberXPTO] = useState<string>('');
@@ -16,9 +15,7 @@ export const useXptoValidation = (numberXPTO: string) => {
     }
   };
 
-
   const validateXpto = () => {
-    console.log(numberXPTO + ' teeste ' + numberXPTO.length)
     if (
       numberXPTO.length === 6 &&
       formatNumber >= 10004 &&
@@ -26,13 +23,10 @@ export const useXptoValidation = (numberXPTO: string) => {
     ) {
       setErrorsNumberXPTO('');
       handleNumberXPTO();
-    }
-    else {
+    } else {
       setErrorsNumberXPTO('O número XPTO deve estar na faixa de 10004 a 99995');
     }
-  }
-
+  };
 
   return { validateXpto, errorsNumberXPTO };
-}
-
+};

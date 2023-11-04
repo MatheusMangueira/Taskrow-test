@@ -56,7 +56,7 @@ export const RegisterView = () => {
   const [alert, setAlert] = useState<boolean>(false);
 
   const handleRegister = (data: RegisterViewProps) => {
-    console.log(data + 'aqui data');
+    console.log(data + 'data');
     setAlert(true);
 
     reset();
