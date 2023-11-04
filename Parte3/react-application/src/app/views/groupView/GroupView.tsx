@@ -1,11 +1,9 @@
-import { FileTree } from '@/app/components/FileTree/FileTree';
-import data from '@/app/service/grupos.json';
+import { Search } from '@/app/components/Search';
 
 export const GroupView = () => {
   return (
-    <div>
-      <h1>Árvore de Grupos</h1>
-      <FileTree grupo={data.grupos[0]} />
+    <div className="w-full h-full ">
+      <Search />
     </div>
   );
 };
