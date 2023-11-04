@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 interface INavMobileItemProps {
   href: string;
   children: React.ReactNode;
@@ -10,13 +12,14 @@ export const NavMobileItem = ({
   target
 }: INavMobileItemProps) => {
   return (
-    <a href={href} target={target} className="m-3 flex items-center rounded-lg">
-      <div
-        area-label="nav mobile"
-        className="ml-4 text-base font-medium text-black hover:text-[#868686] "
-      >
+    <Link
+      href={href}
+      target={target}
+      className="m-3 flex items-center rounded-lg"
+    >
+      <div className="ml-4 text-base font-medium text-black hover:text-[#868686]">
         {children}
       </div>
-    </a>
+    </Link>
   );
 };

@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { List, X } from 'phosphor-react';
 import { NavMobileItem } from './NavMobileItem';
+import Link from 'next/link';
 
 const navigation = [
   { id: '1', name: 'Home', href: '/' },
@@ -15,7 +16,7 @@ export const Navbar = () => {
   return (
     <div className="sticky top-0 w-full z-50">
       <Popover>
-        <div className="py-5 lg:px-10 px-5 flex justify-between w-full items-center bg-secondary relative backdrop-blur-md bg-white/30 z-10 border-b border-[#00000075]">
+        <div className="py-5 lg:px-10 px-5 flex justify-between w-full items-center relative backdrop-blur-md bg-white/30 z-10 border-b border-[#00000075]">
           <div className=" w-full max-w-sm ">
             <Popover className="relative">
               <>
@@ -41,13 +42,13 @@ export const Navbar = () => {
             className="hidden lg:flex space-x-10 relative items-center"
           >
             {navigation.map((item) => (
-              <a
+              <Link
                 className="text-black duration-500 hover:text-[#ccc] text-md"
                 key={item.id}
                 href={item.href}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </Popover.Group>
         </div>
