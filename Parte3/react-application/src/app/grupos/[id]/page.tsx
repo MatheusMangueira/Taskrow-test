@@ -1,4 +1,5 @@
 import { groupManager } from '@/lib/groups';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 type Params = {
@@ -9,7 +10,7 @@ type Params = {
 
 export default function GroupDetails({ params }: Params) {
   const groups = groupManager.searchGroup('idGrupo', Number(params.id));
-  const users = groupManager.searchUser('nome', groups[0].nome);
+  const users = groupManager.searchUser('nome', groups[0]?.nome);
 
   if (!users[0]) {
     notFound();
@@ -17,11 +18,20 @@ export default function GroupDetails({ params }: Params) {
 
   return (
     <div className="lg:px-10 p-2 max-w-[1920px] h-[calc(100vh-88px)] flex flex-col w-full ">
-      <div className="w-full flex justify-center items-center pb-5">
-        <h1 className="text-4xl pt-5 font-bold">
+      <div className="w-full flex justify-between items-center pb-5">
+        <h1 className="text-4xl pt-5 font-bold ">
           {' '}
           Detalhes individuais dos grupos
         </h1>
+        <div>
+          <Link
+            className="h-5 bg-gray-400 p-2 rounded-md hover:bg-slate-300"
+            href={'/grupos'}
+          >
+            {' '}
+            Voltar
+          </Link>
+        </div>
       </div>
       <div className="bg-green-500 p-5 rounded-xl">
         {users.map((item) => (
