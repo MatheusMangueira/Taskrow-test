@@ -1,4 +1,4 @@
-# Teste para Desenvolvedor Web Frontend 2023
+# 💻 Teste para Desenvolvedor Web Frontend 2023
 ### Este repositório contém o código e os recursos para o teste de desenvolvedor web frontend de 2023 da <a target="_blank" href="https://taskrow.com/">TASKROW.</a>
 
 #### Certifique-se de que o Node.js esteja instalado.
@@ -35,5 +35,11 @@ Nesta parte do teste, você encontrará um projeto React chamado `react_applicat
 #### Tecnologias e Bibliotecas Utilizadas:
 - Next.js
 - Tailwind CSS
+- Yup
+- React hook form
+- Eslint
+- Prettier
+- Radix-ui
+
 
 ### OBS: Certifique-se de seguir as instruções específicas em cada pasta para executar os respectivos projetos.
